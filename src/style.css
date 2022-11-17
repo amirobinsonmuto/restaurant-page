@@ -47,9 +47,43 @@ table {
 	border-spacing: 0;
 }
 
-//custom CSS
+
 #content {
-    background: url('./hero.jpg');
     height: 100vh;
-    object-fit: contain;
   }
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    background-color: black;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 50px;
+}
+
+li:last-of-type {
+    padding-right: 0px;
+}
+
+main {
+    background: url('./hero.jpg');
+    height: 80%;
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    height: 10%;
+}

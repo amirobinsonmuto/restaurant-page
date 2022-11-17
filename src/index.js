@@ -1,8 +1,11 @@
 import './style.css';
 import Hero from './hero.jpg';
+import Logo from './logo.png';
 
 console.log('hello');
 
-// Add the image to our existing div.
 const myHero = new Image();
 myHero.src = Hero;
+
+const myLogo = new Image();
+myLogo.src = Logo;
