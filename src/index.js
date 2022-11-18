@@ -1,6 +1,7 @@
+//css import
 import './style.css';
 
-//images
+//images import
 import Hero from './hero.jpg';
 import Logo from './logo.png';
 import GitHub from './github.png';
@@ -42,51 +43,52 @@ mySushi8.src = Sushi8;
 const mySushi9 = new Image();
 mySushi9.src = Sushi9;
 
-//js
+//js import
 import { displayHeader } from './home.js';
 import { displayHomeMain } from './home.js';
 import { displayContactMain} from './contact.js';
 import { displayMenuMain } from './menu.js';
 import { displayFooter } from './home.js';
 
-const content = document.getElementById('content');
 
-//function to wipe out main and footer
+// function to all content
 function wipe() {
-    while (content.firstChild) {
-        content.removeChild(content.lastChild);
-      }
+    const mainContent = document.getElementById('main');
+    const footerContent = document.getElementById('footer');
+    content.removeChild(mainContent);
+    content.removeChild(footerContent);
 }
 
-//invoke functions
+//invoke functions on page load
+const content = document.getElementById('content');
 displayHeader();
-displayHomeMain();
-displayFooter();
-
 const homeTab = document.getElementById('home');
 const menuTab = document.getElementById('menu');
 const contactTab = document.getElementById('contact');
+displayHomeMain();
+displayFooter();
 
-homeTab.addEventListener('click', () => { 
-    wipe(),
-    displayHeader(),
-    displayHomeMain(),
-    displayFooter()
+homeTab.addEventListener('click', ()=>{
+    wipe(); 
+    displayHomeMain();
+    displayFooter();
 });
 
-menuTab.addEventListener('click', () => { 
-    wipe(),
-    displayHeader(),
-    displayMenuMain(),
-    displayFooter()
+menuTab.addEventListener('click', ()=>{
+    wipe();
+    displayMenuMain();
+    displayFooter();
 });
 
-contactTab.addEventListener('click', () => { 
-    wipe(),
-    displayHeader(),
-    displayContactMain(),
-    displayFooter()
+contactTab.addEventListener('click', ()=>{
+    wipe();
+    displayContactMain();
+    displayFooter();
 });
+
+
+
+
 
 
 

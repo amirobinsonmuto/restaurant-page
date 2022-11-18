@@ -1,39 +1,39 @@
 
 
-export function displayHeader () {
-    //nav
-    const nav = document.createElement('nav');
+export function displayHeader() {
+        const nav = document.createElement('nav');
 
-        const logoImg = document.createElement('img');
-        Object.assign(logoImg, {
-            alt: 'sushime logo',
-            src: '512e949f69fc97773375.png',
-            height: 100, // pixels
-            width: 100, // pixels
-        })
-        nav.appendChild(logoImg);
+            const logoImg = document.createElement('img');
+            Object.assign(logoImg, {
+                alt: 'sushime logo',
+                src: '512e949f69fc97773375.png',
+                height: 100, // pixels
+                width: 100, // pixels
+            })
+            nav.appendChild(logoImg);
 
-        const navUl = document.createElement('ul');
-        const home = document.createElement('li');
-        home.setAttribute('id', 'home');
-        const menu = document.createElement('li');
-        menu.setAttribute('id', 'menu');
-        const contact = document.createElement('li');
-        contact.setAttribute('id', 'contact');
+            const navUl = document.createElement('ul');
+            const home = document.createElement('li');
+            home.setAttribute('id', 'home');
+            const menu = document.createElement('li');
+            menu.setAttribute('id', 'menu');
+            const contact = document.createElement('li');
+            contact.setAttribute('id', 'contact');
 
-        home.textContent = "Home";
-        menu.textContent = "Menu";
-        contact.textContent = "Contact";
+            home.textContent = "Home";
+            menu.textContent = "Menu";
+            contact.textContent = "Contact";
 
-        navUl.append(home, menu, contact);
-        nav.appendChild(navUl);
+            navUl.append(home, menu, contact);
+            nav.appendChild(navUl);
 
-    content.appendChild(nav);
-}
+        content.appendChild(nav);
+};
 
 export function displayHomeMain () {
     //main
     const main = document.createElement('main');
+    main.setAttribute('id', 'main');
 
         const container = document.createElement('div');
         container.classList.add('container');
@@ -62,6 +62,7 @@ export function displayHomeMain () {
 export function displayFooter() {
     //footer
     const footer = document.createElement('footer');
+    footer.setAttribute('id', 'footer');
 
         const copyright = document.createElement('p');
         copyright.textContent = 'Copyright © 2022 amirobinsonmuto'

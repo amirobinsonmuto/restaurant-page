@@ -1,6 +1,8 @@
 
 export function displayMenuMain() {
-    
+
+    console.log('displayMenuMain is invoked');
+
     // create a factory function
     const menuFactory = (imgSrc, hdg, descr) => {
         return {
@@ -57,11 +59,15 @@ export function displayMenuMain() {
     menuItemArr.forEach(el => createMenuCard(el));
 
     const main = document.createElement('main');
+    main.setAttribute('id', 'main');
+
+    const menuHeading = document.createElement('h1');
+    menuHeading.textContent = 'Menu';
 
     const container = document.createElement('div');
     container.classList.add('container');
 
-    container.appendChild(menuContainer);
+    container.append(menuHeading, menuContainer);
     main.appendChild(container);
     content.appendChild(main);
 }
