@@ -168,6 +168,12 @@ main .menuItem p {
     background-color:#000;
     color: #fff;
     padding: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menuItem:hover {
+    background-color:rgba(0, 0, 0, 0.8)
 }
 
 .menuItem img {
