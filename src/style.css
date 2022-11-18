@@ -67,8 +67,6 @@ html, body {
 
 body {
     overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
-    scrollbar-width: thin;
 }
 
 #content {
@@ -100,16 +98,15 @@ li {
     padding: 30px;
     font-size: 1.5rem;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.currentTab {
+    border-bottom: 2px var(--color-purple) solid;
 }
 
 li:hover {
-    color:rgba(129, 0, 127, 0.8);
-    transition: all .2s ease-in-out; 
-    transform: scale(1.1); 
-}
-
-li:last-of-type {
-    padding-right: 0px;
+    transform: translateY(-10%);
 }
 
 /*main*/

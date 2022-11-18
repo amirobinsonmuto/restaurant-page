@@ -63,6 +63,7 @@ function wipe() {
 const content = document.getElementById('content');
 displayHeader();
 const homeTab = document.getElementById('home');
+homeTab.classList.add('currentTab');
 const menuTab = document.getElementById('menu');
 const contactTab = document.getElementById('contact');
 displayHomeMain();
@@ -71,18 +72,27 @@ displayFooter();
 homeTab.addEventListener('click', ()=>{
     wipe(); 
     displayHomeMain();
+    homeTab.classList.add('currentTab');
+    menuTab.classList.remove('currentTab');
+    contactTab.classList.remove('currentTab');
     displayFooter();
 });
 
 menuTab.addEventListener('click', ()=>{
     wipe();
     displayMenuMain();
+    homeTab.classList.remove('currentTab');
+    menuTab.classList.add('currentTab');
+    contactTab.classList.remove('currentTab');
     displayFooter();
 });
 
 contactTab.addEventListener('click', ()=>{
     wipe();
     displayContactMain();
+    homeTab.classList.remove('currentTab');
+    menuTab.classList.remove('currentTab');
+    contactTab.classList.add('currentTab');
     displayFooter();
 });
 
