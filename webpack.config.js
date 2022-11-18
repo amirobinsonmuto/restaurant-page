@@ -4,7 +4,9 @@ module.exports = {
 
   mode: 'development',
 
-  entry: './src/index.js',
+  context: __dirname + '/src',
+
+  entry: './index.js',
 
   devtool: 'inline-source-map',
 
@@ -34,4 +36,14 @@ module.exports = {
       },
     ],
   },
+
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src'),
+    },
+    extensions: ['.js', '.jsx'],
+  },
+
+  watch: true,
+
 };
