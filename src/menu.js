@@ -13,15 +13,15 @@ export function displayMenuMain() {
     }
 
     //create menu item objects
-    const sushi0 = menuFactory ('1dbd4dec2233146c0b3f.png', 'Sushi0', 'Sushi 0 description');
-    const sushi1 = menuFactory ('4af02a575fa5353f4722.png', 'Sushi1', 'Sushi 1 description');
-    const sushi2 = menuFactory ('6a9330833932fa3591e7.png', 'Sushi2', 'Sushi 2 description');
-    const sushi3 = menuFactory ('27fadbe4a042e9e8371d.png', 'Sushi3', 'Sushi 3 description');
-    const sushi4 = menuFactory ('29a2b21cc50e25da5ed9.png', 'Sushi4', 'Sushi 4 description');
-    const sushi5 = menuFactory ('5866e2aa3eea46c7bff8.png', 'Sushi5', 'Sushi 5 description');
-    const sushi6 = menuFactory ('d2897d617d1d5ec9ac53.png', 'Sushi6', 'Sushi 6 description');
-    const sushi7 = menuFactory ('f70bdc88f1c3a4c1f1ed.png', 'Sushi7', 'Sushi 7 description');
-    const sushi8 = menuFactory ('ff9b18a3a8b2090dd0ed.png', 'Sushi8', 'Sushi 8 description');
+    const sushi0 = menuFactory ('img/1.png', 'Sushi0', 'Sushi 0 description');
+    const sushi1 = menuFactory ('img/2.png', 'Sushi1', 'Sushi 1 description');
+    const sushi2 = menuFactory ('img/3.png', 'Sushi2', 'Sushi 2 description');
+    const sushi3 = menuFactory ('img/4.png', 'Sushi3', 'Sushi 3 description');
+    const sushi4 = menuFactory ('img/5.png', 'Sushi4', 'Sushi 4 description');
+    const sushi5 = menuFactory ('img/6.png', 'Sushi5', 'Sushi 5 description');
+    const sushi6 = menuFactory ('img/7.png', 'Sushi6', 'Sushi 6 description');
+    const sushi7 = menuFactory ('img/8.png', 'Sushi7', 'Sushi 7 description');
+    const sushi8 = menuFactory ('img/9.png', 'Sushi8', 'Sushi 8 description');
 
     //create an array with the menu item objects 
     const menuItemArr = [sushi0, sushi1, sushi2, sushi3, sushi4, sushi5, sushi6,

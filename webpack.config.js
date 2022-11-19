@@ -29,21 +29,8 @@ module.exports = {
             }
         }],
       },
-      //image loader
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
     ],
   },
-
-  resolve: {
-    alias: {
-      components: path.resolve(__dirname, 'src'),
-    },
-    extensions: ['.js', '.jsx'],
-  },
-
   watch: true,
 
 };

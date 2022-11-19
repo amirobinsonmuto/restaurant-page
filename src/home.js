@@ -6,7 +6,7 @@ export function displayHeader() {
             const logoImg = document.createElement('img');
             Object.assign(logoImg, {
                 alt: 'sushime logo',
-                src: '512e949f69fc97773375.png',
+                src: 'img/logo.png',
                 height: 100, // pixels
                 width: 100, // pixels
             })
@@ -75,7 +75,7 @@ export function displayFooter() {
         const githubImg = document.createElement('img');
         Object.assign(githubImg, {
             alt: 'github logo',
-            src: 'ef7111f215268c27e896.png',
+            src: 'img/github.png',
             height: 30, // pixels
             width: 30, // pixels
         })
