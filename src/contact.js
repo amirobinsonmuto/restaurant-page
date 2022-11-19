@@ -1,5 +1,4 @@
 export function displayContactMain () {
-    console.log('displayContactMain is invoked');
     //main
     const main = document.createElement('main');
     main.setAttribute('id', 'main');

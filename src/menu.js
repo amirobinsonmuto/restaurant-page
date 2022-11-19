@@ -1,8 +1,6 @@
 
 export function displayMenuMain() {
 
-    console.log('displayMenuMain is invoked');
-
     // create a factory function
     const menuFactory = (imgSrc, hdg, descr) => {
         return {
@@ -26,8 +24,6 @@ export function displayMenuMain() {
     //create an array with the menu item objects 
     const menuItemArr = [sushi0, sushi1, sushi2, sushi3, sushi4, sushi5, sushi6,
                       sushi7, sushi8];
-
-    console.log(menuItemArr);
 
     //create div menuContainer
     const menuContainer = document.createElement('div');
