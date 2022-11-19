@@ -1,5 +1,3 @@
-
-
 export function displayHeader() {
         const nav = document.createElement('nav');
 
@@ -14,10 +12,13 @@ export function displayHeader() {
 
             const navUl = document.createElement('ul');
             const home = document.createElement('li');
+            home.classList.add('menuTab')
             home.setAttribute('id', 'home');
             const menu = document.createElement('li');
+            menu.classList.add('menuTab')
             menu.setAttribute('id', 'menu');
             const contact = document.createElement('li');
+            contact.classList.add('menuTab')
             contact.setAttribute('id', 'contact');
 
             home.textContent = "Home";
@@ -85,4 +86,24 @@ export function displayFooter() {
 
     content.appendChild(footer);
 }
+
+// function to all content
+export function wipe() {
+    const mainContent = document.getElementById('main');
+    const footerContent = document.getElementById('footer');
+    content.removeChild(mainContent);
+    content.removeChild(footerContent);
+}
+
+export function setActiveButton(button) {
+    const buttons = document.querySelectorAll(".menuTab");
+  
+    buttons.forEach((button) => {
+      if (button !== this) {
+        button.classList.remove("currentTab");
+      }
+    });
+  
+    button.classList.add("currentTab");
+  }
     
