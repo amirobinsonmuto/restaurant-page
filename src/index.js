@@ -1,20 +1,11 @@
-//css import
-import './style.css';
-
 //js import
 import { displayHeader } from './home.js';
 import { displayHomeMain } from './home.js';
 import { displayContactMain} from './contact.js';
 import { displayMenuMain } from './menu.js';
 import { displayFooter } from './home.js';
-
-// function to all content
-function wipe() {
-    const mainContent = document.getElementById('main');
-    const footerContent = document.getElementById('footer');
-    content.removeChild(mainContent);
-    content.removeChild(footerContent);
-}
+import { wipe } from './home.js';
+import { setActiveButton } from './home.js';
 
 //invoke functions on page load
 const content = document.getElementById('content');
@@ -28,28 +19,22 @@ displayFooter();
 
 homeTab.addEventListener('click', ()=>{
     wipe(); 
+    setActiveButton(homeTab);
     displayHomeMain();
-    homeTab.classList.add('currentTab');
-    menuTab.classList.remove('currentTab');
-    contactTab.classList.remove('currentTab');
     displayFooter();
 });
 
 menuTab.addEventListener('click', ()=>{
     wipe();
+    setActiveButton(menuTab);
     displayMenuMain();
-    homeTab.classList.remove('currentTab');
-    menuTab.classList.add('currentTab');
-    contactTab.classList.remove('currentTab');
     displayFooter();
 });
 
 contactTab.addEventListener('click', ()=>{
     wipe();
+    setActiveButton(contactTab);
     displayContactMain();
-    homeTab.classList.remove('currentTab');
-    menuTab.classList.remove('currentTab');
-    contactTab.classList.add('currentTab');
     displayFooter();
 });
 
