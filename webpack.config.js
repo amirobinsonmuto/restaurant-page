@@ -16,21 +16,21 @@ module.exports = {
 
   },
 
-  module: {
-    rules: [
-      //css loader
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 
-        {
-            loader: 'css-loader',
-            options: {
-                sourceMap: true,
-            }
-        }],
-      },
-    ],
-  },
+  // module: {
+  //   rules: [
+  //     //css loader
+  //     {
+  //       test: /\.css$/i,
+  //       use: ['style-loader', 
+  //       {
+  //           loader: 'css-loader',
+  //           options: {
+  //               sourceMap: true,
+  //           }
+  //       }],
+  //     },
+  //   ],
+  // },
   watch: true,
 
 };
